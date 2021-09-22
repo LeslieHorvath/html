@@ -8,6 +8,50 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <h1>Registration form</h1>
+    <form>
+        <!--User Info-->
+        <label for="username">Username</label>
+        <input id="username" type="text" required/>
+        <label for="password">Password</label>
+        <input id="password" type="password" required/>
+        <label for="email"> Email</label>
+        <input type="email" required />
+    <h2>Which taxi do you require?</h2>
+    <!--Taxi Type-->
+    <label>
+        <input type="radio" name="car" value="car"> Car
+    </label>
+    <label>
+        <input type="radio" name="van" value="van"> Van
+    </label>
+    <label>
+        <input type="radio" name="Tuktuk" value="tuktuk"> Tuk Tuk
+    </label>
+    <h2>Choose your extras</h2>
+    <!--Extras-->
+    <label>
+        <input type="checkbox" name="babyseat" value="babyseat"> Baby seat
+    </label>
+    <label>
+        <input type="checkbox" name="wheelchairacess" value="wheelchairacess"> Wheelchair acess
+    </label>
+    <label>
+        <input type="checkbox" name="privacywindows" value="privacywindows"> Privacy windows
+    </label>
+    <h2>Where would you like us to pick you up?</h2>
+    <!--Pickup Location-->
+    <label for="pickup">Pickup Location</label>
+    <select name="pickup" id="pickup">
+        <option value="downtown">Downtown</option>
+        <option value="mall">Mall</option>
+        <option value="airport">Airport</option>
+    </select>
+    <h2>Additional Instructions</h2>
+    <!--instructions-->
+    <label for="special">Special</label>
+    <textarea id="special" name="special" rows="4" cols="50" placeholder="provide special instructions here"></textarea>
+    <button>Submit</button>
+    </form>
 </body>
 </html>
